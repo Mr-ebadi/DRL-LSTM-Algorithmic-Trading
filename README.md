@@ -39,34 +39,42 @@ The performance of this algorithmic trading policy will be automatically display
 
 Below are the comprehensive performance charts and indicators generated during the training and backtesting phases, stored automatically in the `Figures` directory:
 
-### 1. Trading Execution & Capital Growth
-The upper chart displays the historical price asset with executed Long (green triangles) and Short (red triangles) signals. The lower chart illustrates the exponential growth of the portfolio's total capital over the trading horizon, validating the robustness of the strategy.
+### 1. Full Horizon Train/Test Separation
+This chart illustrates the continuous historical asset price (AAPL) and capital growth across the entire timeline, explicitly marking the **Train/Test separation line** to demonstrate rigorous out-of-sample evaluation.
 <p align="center">
-  <img src="Figures/price_capital_backtest.png" alt="Price and Capital Backtest" width="650">
+  <img src="Figures/AAPL_TrainingTestingRendering.png" alt="Complete Train and Test Horizon" width="650">
 </p>
 
-### 2. Action-Value (Q-Values) Dynamics
-This chart illustrates the tracking of Q-values for Short and Long actions over time, showcasing how the agent evaluates and updates its action preferences based on market states.
+### 2. Out-of-Sample Backtesting Performance
+A closer look at the dedicated out-of-sample test period for Apple stock (AAPL), capturing precise Long and Short trading execution signals alongside the corresponding capital growth curve.
 <p align="center">
-  <img src="Figures/q_values.png" alt="Q-Values Tracking" width="550">
+  <img src="Figures/AAPL_Rendering.png" alt="Out-of-Sample Backtesting" width="650">
 </p>
 
-### 3. Training Optimization & Reward Convergence
-* **Total Rewards:** The agent successfully shifts from negative random exploration to positive reward accumulation, demonstrating excellent learning convergence.
-* **Sharpe Ratio Progression:** Monitoring the Sharpe Ratio behavior across training and testing episodes to ensure the policy optimizes risk-adjusted returns.
-
+### 3. Action-Value (Q-Values) Dynamics
+This chart tracks the evolution of estimated Q-values for Short and Long actions over time, illustrating how the neural network dynamically updates its action preferences based on market states.
 <p align="center">
-  <img src="Figures/total_reward_convergence.png" alt="Total Reward Convergence" width="450" style="display: inline-block; margin-right: 10px;">
-  <img src="Figures/sharpe_ratio_episodes.png" alt="Sharpe Ratio per Episode" width="450" style="display: inline-block;">
+  <img src="Figures/AAPL_QValues.png" alt="Q-Values Tracking" width="550">
 </p>
 
-### 4. Quantitative Performance Metrics (Train vs. Test)
-The tables below present a highly detailed statistical breakdown of the trading policy. Notably, the agent achieved a remarkable **Sharpe Ratio of 2.251** and a **Profitability rate of 71.43%** during the out-of-sample Testing phase, significantly proving its generalization power.
+### 4. Risk-Adjusted Returns & Total Rewards
+* **Total Rewards:** The chart (`AAPLTrainingResults.png`) captures the total accumulated reward per episode, showcasing the positive convergence trend.
+* **Sharpe Ratio Progression:** The chart (`AAPL_TrainingTestingPerformance.png`) monitors the Sharpe Ratio behavior across training and testing episodes to ensure stable risk-adjusted returns.
 
 <p align="center">
-  <img src="Figures/train_performance_table.jpg" alt="Train Performance Metrics" width="380" style="display: inline-block; margin-right: 20px;">
-  <img src="Figures/test_performance_table.jpg" alt="Test Performance Metrics" width="380" style="display: inline-block;">
+  <img src="Figures/AAPLTrainingResults.png" alt="Total Reward Convergence" width="450" style="display: inline-block; margin-right: 10px;">
+  <img src="Figures/AAPL_TrainingTestingPerformance.png" alt="Sharpe Ratio per Episode" width="450" style="display: inline-block;">
 </p>
+
+### 5. Quantitative Performance Metrics (Train vs. Test)
+The tables below present the exact statistical evaluation metrics. Notably, the model achieves a strong **Sharpe Ratio of 2.251** and a **71.43% Profitability rate** during the out-of-sample Test phase, demonstrating exceptional generalization capability on AAPL stock without overfitting.
+
+<p align="center">
+  <img src="Figures/Train.png" alt="Train Performance Metrics" width="380" style="display: inline-block; margin-right: 20px;">
+  <img src="Figures/Test.png" alt="Test Performance Metrics" width="380" style="display: inline-block;">
+</p>
+
+
 
 
 ## 📬 Contact
