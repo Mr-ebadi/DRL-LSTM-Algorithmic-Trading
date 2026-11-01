@@ -2,8 +2,8 @@
 
 """
 Goal: Implementing some data augmentation techniques for the stock market time series.
-Authors: Thibaut Théate and Damien Ernst
-Institution: University of Liège
+Authors: Mohammadreza Ebadi
+Institution: Urmia university of technology
 """
 
 ###############################################################################
