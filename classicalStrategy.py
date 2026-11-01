@@ -2,8 +2,8 @@
 
 """
 Goal: Implementing some classical algorithmic trading strategies.
-Authors: Thibaut Théate and Damien Ernst
-Institution: University of Liège
+Authors: Mohammadreza Ebadi
+Institution: Urmia university of technology
 """
 
 ###############################################################################
