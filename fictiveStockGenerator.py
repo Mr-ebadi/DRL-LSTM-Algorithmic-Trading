@@ -2,8 +2,8 @@
 
 """
 Goal: Generating fictive stock market curves for testing purposes.
-Authors: Thibaut Théate and Damien Ernst
-Institution: University of Liège
+Authors: Mohammadreza Ebadi
+Institution: Urmia university of technology
 """
 
 ###############################################################################
