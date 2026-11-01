@@ -3,8 +3,8 @@
 """
 Goal: Downloading financial data (related to stock markets) from diverse sources
       (Alpha Vantage, Yahoo Finance).
-Authors: Thibaut Théate and Damien Ernst
-Institution: University of Liège
+Authors: Mohammadreza Ebadi
+Institution: Urmia university of technology
 """
 
 ###############################################################################
