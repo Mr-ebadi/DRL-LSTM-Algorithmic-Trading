@@ -2,8 +2,8 @@
 
 """
 Goal: Accurately estimating the performance of a trading strategy.
-Authors: Thibaut Théate and Damien Ernst
-Institution: University of Liège
+Authors: Mohammadreza Ebadi
+Institution: Urmia university of technology
 """
 
 ###############################################################################
