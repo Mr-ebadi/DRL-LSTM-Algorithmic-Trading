@@ -3,8 +3,8 @@
 """
 Goal: Implementing a custom enhanced version of the DQN algorithm specialized
       to algorithmic trading.
-Authors: Thibaut Théate and Damien Ernst
-Institution: University of Liège
+Authors: Mohammadreza Ebadi
+Institution: Urmia university of technology
 """
 
 ###############################################################################
